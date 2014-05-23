@@ -59,9 +59,6 @@ void Sort(int arr[],int low,int mid,int high)
 
             }
         }
-        for(i=low;i<=high;i++)
-            std::cout<<arr[i]<<" ";
-         std::cout<<invct;
         }
     else
     {
