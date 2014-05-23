@@ -42,8 +42,8 @@ void partition(int arr[],int low,int high){
 }
 
 void Sort(int arr[],int low,int mid,int high)
-{
-    int i,m,k,l,size = high -low + 1, *temp = (int*)malloc(sizeof(int)*size*1LL);
+
+    int i,m,k,size = high -low + 1;
     if(size<=10)
     {
         for(i=low+1;i<=high;i++)
@@ -64,7 +64,9 @@ void Sort(int arr[],int low,int mid,int high)
          std::cout<<invct;
         }
     else
-    {l=low;
+    {
+    int *temp = (int*)malloc(sizeof(int)*size*1LL),l;    
+    l=low;
     i=low;
     m=mid+1;
     while((l<=mid)&&(m<=high))
